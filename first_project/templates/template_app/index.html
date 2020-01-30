@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends "template_app/base.html" %}
+{% block content %}
+  <h1>Welcome to index page</h1>
+  <h2>This is an index.html page showing! </h2>
+  {{ text|cut:"world" }}
+  {{ number|add:"2" }}
+{% endblock %}

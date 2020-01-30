@@ -1,0 +1,9 @@
+{% extends 'template_app/base.html' %}
+    {% block content %}
+    <h1>Authentication Index Page</h1>
+    {% if user.is_authenticated %}
+    <p>Hi {{ user.username }}!</p>
+    {% else %}
+    <p>You are not logged in</p>
+    {% endif %}
+ {% endblock %}
